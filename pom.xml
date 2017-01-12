@@ -121,8 +121,8 @@
             <Export-Package>*</Export-Package>
             <Require-Bundle>org.lucee.xmlbeans;bundle-version=2.6.0</Require-Bundle>
             <!-- <Require-Bundle-Fragment></Require-Bundle-Fragment> -->
-            <Import-Package>!com.microsoft.schemas.office.powerpoint,!com.microsoft.schemas.office.word,*</Import-Package>
-            <DynamicImport-Package>com.microsoft.schemas.office.powerpoint,com.microsoft.schemas.office.word</DynamicImport-Package>
+            <Import-Package>!com.microsoft.schemas.office.powerpoint,!com.microsoft.schemas.office.word,!org.openxmlformats.schemas.officeDocument.x2006.math,*</Import-Package>
+            <DynamicImport-Package>com.microsoft.schemas.office.powerpoint,com.microsoft.schemas.office.word,org.openxmlformats.schemas.officeDocument.x2006.math</DynamicImport-Package>
             <!-- <Fragment-Host></Fragment-Host> -->
           </instructions>
         </configuration>
