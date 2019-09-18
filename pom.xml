@@ -2,11 +2,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.lucee</groupId>
   <artifactId>poi-ooxml-schemas</artifactId>
-  <version>3.15.0</version>
-  <name>poi-ooxml-schemas</name>
+  <version>4.1.0</version>
+  <name>Apache POI OOXML Schemas</name>
   <packaging>bundle</packaging>
 
-  <description>OSGi Version of poi-ooxml-schemas</description>
+  <description>OSGi Version of Apache POI OOXML Schemas</description>
   <url>http://maven.lucee.org/poi-ooxml-schemas/</url>
 
   <!-- same license as the original jar -->
@@ -95,7 +95,7 @@
                  <artifactItem>
                    <groupId>org.apache.poi</groupId>
                     <artifactId>poi-ooxml-schemas</artifactId>
-                    <version>3.15</version>
+                    <version>4.1.0</version>
                    <type>jar</type>
                    <overWrite>false</overWrite>
                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
@@ -115,11 +115,11 @@
         <configuration>
           <unpackBundle>true</unpackBundle>
           <instructions>
-            <Bundle-Name>org.lucee.poi.ooxml.schemas</Bundle-Name>
-            <Bundle-SymbolicName>org.lucee.poi.ooxml.schemas</Bundle-SymbolicName>
+            <Bundle-Name>org.lucee.poi-ooxml-schemas</Bundle-Name>
+            <Bundle-SymbolicName>org.lucee.poi-ooxml-schemas</Bundle-SymbolicName>
             <Bundle-Description>OSGI version of jar ${project.name}</Bundle-Description>
-            <Export-Package>*</Export-Package>
-            <Require-Bundle>org.lucee.xmlbeans;bundle-version=2.6.0</Require-Bundle>
+            <Export-Package>*,META-INF.services.*</Export-Package>
+            <Require-Bundle>org.lucee.xmlbeans;bundle-version=3.1.0</Require-Bundle>
             <!-- <Require-Bundle-Fragment></Require-Bundle-Fragment> -->
             <Import-Package>!com.microsoft.schemas.office.powerpoint,!com.microsoft.schemas.office.word,!org.openxmlformats.schemas.officeDocument.x2006.math,!org.openxmlformats.schemas.schemaLibrary.x2006.main,*</Import-Package>
             <DynamicImport-Package>com.microsoft.schemas.office.powerpoint,com.microsoft.schemas.office.word,org.openxmlformats.schemas.officeDocument.x2006.math,org.openxmlformats.schemas.schemaLibrary.x2006.main</DynamicImport-Package>
@@ -139,7 +139,7 @@
     <url>https://github.com/lucee/osgi-bundle-poi-ooxml-schemas</url>
     <connection>scm:git:git://github.com/lucee/osgi-bundle-poi-ooxml-schemas.git</connection>
     <developerConnection>scm:git:git@github.com:lucee/osgi-bundle-poi-ooxml-schemas.git</developerConnection>
-    <tag>poi-ooxml-schemas OSGi library</tag>
+    <tag>Apache POI OOXML Schemas OSGi library</tag>
   </scm>
 
   <distributionManagement>
